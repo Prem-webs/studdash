@@ -268,17 +268,15 @@ header {
     margin-bottom: 10px;
   }
 
-  .nav {
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    margin-top: 10px;
-  }
+.nav {
+  display: flex;
+  align-items: center;
+}
 
-  .nav li {
-    margin: 5px 0;
-  }
-
+.nav li {
+  list-style: none;
+  margin-left: 20px;
+}
   .dashboard-grid-top {
     grid-template-columns: 1fr;
   }
@@ -311,4 +309,13 @@ header {
   .bar {
     font-size: 10px;
   }
+  .nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav li {
+  list-style: none;
+  margin-left: 20px;
+}
 }
