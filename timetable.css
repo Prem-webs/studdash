@@ -129,4 +129,13 @@ header {
   .bar {
     font-size: 10px;
   }
+  .nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav li {
+  list-style: none;
+  margin-left: 20px;
+}
 }
