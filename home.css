@@ -179,16 +179,15 @@ header {
     margin-bottom: 10px;
   }
 
-  .nav {
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    margin-top: 10px;
-  }
+ .nav {
+  display: flex;
+  align-items: center;
+}
 
-  .nav li {
-    margin: 5px 0;
-  }
+.nav li {
+  list-style: none;
+  margin-left: 20px;
+}
 
   .department-card img {
     height: 180px;
@@ -203,7 +202,15 @@ header {
   .department-card h3 {
     font-size: 16px;
   }
+.nav {
+  display: flex;
+  align-items: center;
+}
 
+.nav li {
+  list-style: none;
+  margin-left: 20px;
+}
   .department-card img {
     height: 160px;
   }
