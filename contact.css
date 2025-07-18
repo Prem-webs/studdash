@@ -1,4 +1,3 @@
-/* Reset & Root */
 * {
   margin: 0;
   padding: 0;
@@ -12,10 +11,10 @@
   --gradient-color-bg: linear-gradient(180deg, rgb(13, 9, 11) 0%, rgb(179, 12, 173) 51%, rgba(99, 13, 178, 1) 100%);
   --main-color: #e6006d;
   --font-color: #444;
-  --hover-box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  --hover-box-shadow: rgba(0,0,0,0.19) 0px 10px 20px, rgba(0,0,0,0.23) 0px 6px 6px;
+  --gradient-white-bg2: linear-gradient(98deg, #e5eef7 0%, #fff 100%);
 }
 
-/* Body */
 body {
   font-family: 'Poppins', sans-serif;
   background: var(--bg-color);
@@ -24,7 +23,7 @@ body {
 
 /* Header */
 header {
-  padding: 15px 8%;
+  padding: 10px 8%;
   width: 100%;
   position: fixed;
   top: 0;
@@ -38,8 +37,8 @@ header {
 }
 
 .logo-circle {
-  width: 120px;
-  height: 120px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   overflow: hidden;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -74,6 +73,7 @@ header {
   -webkit-background-clip: text;
   color: transparent;
 }
+
 
 /* Teacher Contact Section */
 .teacher-contact-section {
@@ -162,15 +162,15 @@ header {
     height: 90px;
   }
 
-  .nav {
-    flex-direction: column;
-    align-items: center;
-    margin-top: 10px;
-  }
+ .nav {
+  display: flex;
+  align-items: center;
+}
 
-  .nav li {
-    margin: 10px 0;
-  }
+.nav li {
+  list-style: none;
+  margin-left: 20px;
+}
 }
 
 @media (max-width: 768px) {
@@ -195,6 +195,15 @@ header {
   .teacher-card p {
     font-size: 14px;
   }
+   .nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav li {
+  list-style: none;
+  margin-left: 20px;
+}
 }
 
 @media (max-width: 480px) {
@@ -209,4 +218,13 @@ header {
   .teacher-card {
     padding: 20px;
   }
+   .nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav li {
+  list-style: none;
+  margin-left: 20px;
+}
 }
