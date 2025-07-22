@@ -82,6 +82,7 @@ header {
 }
 
 .section-title {
+  padding: 35px;
   font-size: 36px;
   margin-bottom: 40px;
   background: var(--gradient-color-bg);
