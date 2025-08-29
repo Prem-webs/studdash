@@ -37,8 +37,8 @@ header {
 }
 
 .logo-circle {
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   overflow: hidden;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -68,11 +68,100 @@ header {
   transition: color 0.3s ease;
 }
 
-.nav a:hover {
+.nav a:hover, .nav a.active {
   background: var(--gradient-color-bg);
   -webkit-background-clip: text;
   color: transparent;
 }
+
+/* Timetable Container */
+.container {
+  max-width: 1200px;
+  margin: 150px auto 40px;
+  background: var(--gradient-white-bg2);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: var(--hover-box-shadow);
+}
+
+.container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--main-color);
+  font-size: 26px;
+  font-weight: 700;
+}
+
+/* Table */
+.table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 900px; /* ensures scroll on small screens */
+}
+
+table thead {
+  background: var(--gradient-color-bg);
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+}
+
+table tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+table tr:hover {
+  background: #f1f1f1;
+  transition: 0.2s;
+}
+
+/* Subject Key */
+.subject-key {
+  margin-top: 25px;
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: var(--hover-box-shadow);
+}
+
+.subject-key h3 {
+  color: var(--main-color);
+  margin-bottom: 10px;
+}
+
+.subject-key ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.subject-key ul li {
+  margin: 5px 0;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.subject-key ul li span {
+  font-weight: bold;
+  color: #2c3e50;
+  width: 60px;
+  display: inline-block;
+}
+
+/* Responsive */
 @media (max-width: 768px) {
   header {
     flex-direction: column;
@@ -81,8 +170,8 @@ header {
   }
 
   .logo-circle {
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
     margin-bottom: 10px;
   }
 
@@ -96,46 +185,4 @@ header {
   .nav li {
     margin: 5px 0;
   }
-
-  .dashboard-grid-top {
-    grid-template-columns: 1fr;
-  }
-
-  .subject-row {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .subject-row label {
-    width: auto;
-  }
-
-  .bar-container {
-    width: 100%;
-  }
-}
-
-/* Extra small screens (phones below 480px) */
-@media (max-width: 480px) {
-  .section-title {
-    font-size: 24px;
-  }
-
-  .student-box img {
-    width: 80px;
-    height: 80px;
-  }
-
-  .bar {
-    font-size: 10px;
-  }
-  .nav {
-  display: flex;
-  align-items: center;
-}
-
-.nav li {
-  list-style: none;
-  margin-left: 20px;
-}
 }
