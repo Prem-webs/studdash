@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>student Dashboard</title>
+  <title>Student Dashboard - Timetable</title>
   <link rel="stylesheet" href="timetable.css" />
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
@@ -11,18 +11,115 @@
 
   <!-- Header -->
   <header>
-    <a href="#home" class="logo-link">
+    <a href="index.html" class="logo-link">
       <div class="logo-circle">
         <img src="logo2.jpg" alt="Logo" />
       </div>
     </a>
     
     <ul class="nav">
-      <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="attendance.html"> Attendance</a></li>
-      <li><a href="timetable.html">Time Table</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="attendance.html">Attendance</a></li>
+      <li><a href="timetable.html" class="active">Time Table</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </header>
-  </body>
+
+  <!-- Main Container -->
+  <div class="container">
+    <h2>Class Timetable (TYCO-B, Sem V)</h2>
+
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>Day / Time</th>
+            <th>8:30 - 9:30</th>
+            <th>9:30 - 10:30</th>
+            <th>10:30 - 11:15</th>
+            <th>11:15 - 12:15</th>
+            <th>12:15 - 1:15</th>
+            <th>1:15 - 1:30</th>
+            <th>1:30 - 2:30</th>
+            <th>2:30 - 3:30</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Monday</td>
+            <td>SEN (310)</td>
+            <td>OSY (305)</td>
+            <td>MGU</td>
+            <td>OSY(B1)/CLC(B2)/SEN(B3)</td>
+            <td>ENDS (310)</td>
+            <td>R</td>
+            <td>SPORTS</td>
+            <td>MGU</td>
+          </tr>
+          <tr>
+            <td>Tuesday</td>
+            <td>CLC (310)</td>
+            <td>SEN (305)</td>
+            <td>SJH</td>
+            <td>VBB</td>
+            <td>OSY (305)</td>
+            <td>E</td>
+            <td>CLC (310)</td>
+            <td>SEN (310)</td>
+          </tr>
+          <tr>
+            <td>Wednesday</td>
+            <td>OSY (310)</td>
+            <td>CLC (310)</td>
+            <td>ACN</td>
+            <td>CLC(B1)/TG(B2)/LIB(B3)</td>
+            <td>MGU</td>
+            <td>E</td>
+            <td>ITR (310)</td>
+            <td>MGU</td>
+          </tr>
+          <tr>
+            <td>Thursday</td>
+            <td>CLC (310)</td>
+            <td>SEN (305)</td>
+            <td>SJH</td>
+            <td>SEN(B1)/OSY(B2)/TG(B3)</td>
+            <td>ACN</td>
+            <td>E</td>
+            <td>CLC (310)</td>
+            <td>OSY (310)</td>
+          </tr>
+          <tr>
+            <td>Friday</td>
+            <td>OSY (310)</td>
+            <td>SEN (305)</td>
+            <td>SJH</td>
+            <td>LIB(B1)/SEN(B2)/OSY(B3)</td>
+            <td>SJH</td>
+            <td>R</td>
+            <td>SPI(B1)/SEN(B2)/CLC(B3)</td>
+            <td>KMK</td>
+          </tr>
+          <tr>
+            <td>Saturday</td>
+            <td colspan="8">Lab & Project Work (Batch wise: SEN(B1)/SPI(B2)/SPI(B3))</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Subject Key -->
+    <div class="subject-key">
+      <h3>Subject Abbreviations</h3>
+      <ul>
+        <li><span>OSY:</span> Operating System</li>
+        <li><span>SEN:</span> Software Testing</li>
+        <li><span>CLC:</span> Cloud Computing</li>
+        <li><span>ENDS:</span> Entrepreneurship Development & Startups</li>
+        <li><span>SPI:</span> Seminar and Project Initiation</li>
+      </ul>
+    </div>
+  </div>
+
+</body>
 </html>
