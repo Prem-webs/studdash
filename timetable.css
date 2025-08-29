@@ -186,3 +186,31 @@ table tr:hover {
     margin: 5px 0;
   }
 }
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 24px;
+  }
+
+  .department-card h3 {
+    font-size: 16px;
+  }
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav li {
+  list-style: none;
+  margin-left: 20px;
+}
+  .department-card img {
+    height: 160px;
+  }
+}
+.featured-department-card img {
+  height: 250px;
+}
+
+.featured-department-card h3 {
+  font-size: 20px;
+}
